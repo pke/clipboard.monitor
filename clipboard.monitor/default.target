@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.5"?>
+
+<target name="default">
+<locations>
+<location path="${eclipse_home}" type="Profile">
+<includeBundles>
+<plugin id="org.eclipse.equinox.ds.source"/>
+<plugin id="com.sun.jna"/>
+<plugin id="org.eclipse.swt.win32.win32.x86"/>
+<plugin id="org.eclipse.equinox.event.source"/>
+<plugin id="org.eclipse.equinox.ds"/>
+<plugin id="org.eclipse.osgi.services.source"/>
+<plugin id="org.eclipse.equinox.util.source"/>
+<plugin id="org.eclipse.swt.win32.win32.x86.source"/>
+<plugin id="org.eclipse.equinox.event"/>
+<plugin id="org.eclipse.equinox.util"/>
+<plugin id="org.eclipse.swt"/>
+<plugin id="org.eclipse.osgi.source"/>
+<plugin id="org.eclipse.osgi"/>
+<plugin id="org.eclipse.osgi.services"/>
+</includeBundles>
+</location>
+</locations>
+<targetJRE path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
+</target>
