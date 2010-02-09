@@ -1,1 +1,3 @@
 ﻿Clipboard Monitor Repository
+
+http://philondev.blogspot.com/2010/02/osgi-clipboard-monitor-for-java-on.html
