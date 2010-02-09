@@ -21,14 +21,14 @@ import clipboard.monitor.ClipboardListener;
 
 /**
  * ClipboardListener implementation that publishes an event with the
- * <code>eclipseutils/ui/clipboard/monitor/event</code> topic with the
+ * <code>clipboard/monitor/event</code> topic with the
  * EventAdmin. The event has no properties.
  * 
  * @author <a href="mailto:phil.kursawe@gmail.com">Philipp Kursawe</a>
  * 
  */
 public class EventAdminClipboardListener implements ClipboardListener {
-	private static final String TOPIC = "eclipseutils/ui/clipboard/monitor/event"; //$NON-NLS-1$
+	private static final String TOPIC = "clipboard/monitor/event"; //$NON-NLS-1$
 
 	private final AtomicReference<EventAdmin> ref = new AtomicReference<EventAdmin>();
 

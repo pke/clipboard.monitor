@@ -37,16 +37,16 @@ import clipboard.monitor.ClipboardListener;
 /**
  * ClipboardListener implementation that queries the clipboard for the available
  * formats and publishes specialized events under the parent
- * <code>eclipseutils/ui/clipboard/monitor/swt/</code> topic.
+ * <code>clipboard/monitor/swt/</code> topic.
  * 
  * <ul>
  * <code>
- * <li>eclipseutils/ui/clipboard/monitor/swt/TEXT</li>
- * <li>eclipseutils/ui/clipboard/monitor/swt/URL</li>
- * <li>eclipseutils/ui/clipboard/monitor/swt/IMAGE</li>
- * <li>eclipseutils/ui/clipboard/monitor/swt/RTF</li>
- * <li>eclipseutils/ui/clipboard/monitor/swt/HTML</li>
- * <li>eclipseutils/ui/clipboard/monitor/swt/FILE</li>
+ * <li>clipboard/monitor/swt/TEXT</li>
+ * <li>clipboard/monitor/swt/URL</li>
+ * <li>clipboard/monitor/swt/IMAGE</li>
+ * <li>clipboard/monitor/swt/RTF</li>
+ * <li>clipboard/monitor/swt/HTML</li>
+ * <li>clipboard/monitor/swt/FILE</li>
  * </code>
  * </ul>
  * 
@@ -55,7 +55,7 @@ import clipboard.monitor.ClipboardListener;
  */
 public class SWTClipboardListener implements ClipboardListener {
 
-	private static final String BASE_TOPIC = "eclipseutils/ui/clipboard/monitor/swt"; //$NON-NLS-1$
+	private static final String BASE_TOPIC = "clipboard/monitor/swt"; //$NON-NLS-1$
 	private final AtomicReference<EventAdmin> eventAdminRef = new AtomicReference<EventAdmin>();
 	private final AtomicReference<LogService> logRef = new AtomicReference<LogService>();
 	private Map<Transfer, String> transferTopicMap;
