@@ -1,0 +1,7 @@
+clipboard.monitor
+clipboard.monitor.component
+clipboard.monitor.event.internal
+clipboard.monitor.swt.internal
+clipboard.monitor.windows
+clipboard.monitor.windows.component.internal
+clipboard.monitor.windows.internal

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: clipboard.monitor
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: %Bundle-Vendor
+Bundle-DocURL: http://github.com/pke/eclipse_helpers/tree/master/clipboard.monitor/doc/
+Bundle-Category: %Bundle-Category
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: com.sun.jna,
+ com.sun.jna.examples.win32,
+ com.sun.jna.ptr,
+ com.sun.jna.win32,
+ org.osgi.service.component;version="1.1.0"
+Export-Package: clipboard.monitor;version="1.0.0"

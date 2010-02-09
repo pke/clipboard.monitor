@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc verbose="true" access="public" author="true" 
+        	classpath="C:\dev\java\eclipse.3.5\plugins\org.eclipse.swt.win32.win32.x86_3.6.0.v3631.jar;C:\dev\java\eclipse.3.5\plugins\com.sun.jna_3.2.3.jar;C:\dev\java\eclipse.3.5\plugins\org.eclipse.swt_3.6.0.v3631.jar;../clipboard.monitor.target/com.sun.jna.win32/bin;../clipboard.monitor.component/bin;C:\dev\java\eclipse.3.5\plugins\org.eclipse.osgi.services_3.2.100.v20100108.jar;C:\dev\java\eclipse.3.5\plugins\org.eclipse.osgi_3.6.0.v20100128-1430.jar;../clipboard.monitor.windows/bin;bin" destdir="doc" doctitle="Clipboard Monitor API" nodeprecated="false" nodeprecatedlist="false" noindex="false" nonavbar="false" notree="false" packagenames="clipboard.monitor.windows.internal,clipboard.monitor.component,clipboard.monitor.swt.internal,clipboard.monitor.event.internal,clipboard.monitor.windows.component.internal" source="1.5" sourcefiles="src/clipboard/monitor/AbstractClipboardMonitor.java,src/clipboard/monitor/ClipboardEvent.java,src/clipboard/monitor/ClipboardListener.java,../clipboard.monitor.windows/src/clipboard/monitor/windows/AbstractWindowsClipboardMonitor.java,src/clipboard/monitor/ClipboardMonitor.java" sourcepath="../clipboard.monitor.event/src;../clipboard.monitor.windows/src;../clipboard.monitor.windows.component/src;../clipboard.monitor.component/src;../clipboard.monitor.swt/src;src" splitindex="true" use="true" version="true">
+            <excludepackage name="*.internal.*"/>
+        	<link href="jar:file:/C:/dev/java/eclipse.3.5/plugins/org.eclipse.platform.doc.isv_3.6.0.v20100129-1139.jar!/reference/api"/>
+            <link href="http://java.sun.com/j2se/1.5.0/docs/api/"/>
+        </javadoc>
+    </target>
+</project>

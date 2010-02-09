@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="clipboard.monitor.windows">
+   <implementation class="clipboard.monitor.windows.component.internal.WindowsClipboardMonitorComponent"/>
+   <reference cardinality="1..n" interface="clipboard.monitor.ClipboardListener" name="ClipboardListener" policy="dynamic"/>
+   <property name="service.description" type="String" value="Clipboard Monitor"/>
+   <service>
+      <provide interface="clipboard.monitor.ClipboardMonitor"/>
+   </service>
+</scr:component>

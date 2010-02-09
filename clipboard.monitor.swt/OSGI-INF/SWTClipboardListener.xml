@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="clipboard.monitor.swt.listener">
+   <implementation class="clipboard.monitor.swt.internal.SWTClipboardListener"/>
+   <service>
+      <provide interface="clipboard.monitor.ClipboardListener"/>
+   </service>
+   <reference bind="bind" cardinality="1..1" interface="org.osgi.service.event.EventAdmin" name="EventAdmin" policy="dynamic" unbind="unbind"/>
+   <reference bind="bind" cardinality="0..1" interface="org.osgi.service.log.LogService" name="LogService" policy="dynamic" unbind="unbind"/>
+</scr:component>

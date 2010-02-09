@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: clipboard.monitor.windows
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: %Bundle-Vendor
+Bundle-ContactAddress: %Bundle-ContactAddress
+Bundle-Description: %Bundle-Description
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Import-Package: clipboard.monitor,
+ com.sun.jna,
+ com.sun.jna.examples.win32,
+ com.sun.jna.win32
+Export-Package: clipboard.monitor.windows
