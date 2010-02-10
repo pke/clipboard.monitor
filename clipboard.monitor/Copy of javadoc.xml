@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc">
+    <target name="javadoc">
+        <javadoc verbose="true" access="protected" author="true" 
+        	sourcepath="../clipboard.monitor/src;../clipboard.monitor.component/src"
+        	packagenames="clipboard.monitor.*"
+    		excludepackagenames="*.internal.*"
+        	classpath="C:\dev\java\eclipse.3.5\plugins\org.eclipse.osgi.services_3.2.100.v20100108.jar;C:\dev\java\eclipse.3.5\plugins\org.eclipse.osgi_3.6.0.v20100128-1430.jar;"
+        	defaultexcludes="yes"
+        	destdir="doc" 
+    		doctitle="Clipboard Monitor API" 
+    		nodeprecated="false" 
+    		nodeprecatedlist="false" 
+    		noindex="false" 
+    		nonavbar="false" 
+    		notree="false" 
+    		source="1.5" 
+        	splitindex="true" 
+        	use="true" 
+        	version="true">
+        	<packageset dir=".." defaultexcludes="yes">
+        		<include name="clipboard.monitor.**/src"/>
+        		<exclude name="*internal*"/>
+        	</packageset>
+            <tag name="osgi.no" description="Does not require the OSGi runtime." scope="types"/>
+        	<tag name="subclass.override" description="Clients may override this method to provide custom functionality."/>
+        	<link href="jar:file:/C:/dev/java/eclipse.3.5/plugins/org.eclipse.platform.doc.isv_3.6.0.v20100129-1139.jar!/reference/api"/>
+            <link href="http://java.sun.com/j2se/1.5.0/docs/api/"/>
+        </javadoc>
+    </target>
+</project>

@@ -25,7 +25,7 @@ import clipboard.monitor.ClipboardMonitor;
  * @author <a href="mailto:phil.kursawe@gmail.com">Philipp Kursawe</a>
  * 
  */
-public abstract class ClipboardMonitorComponent {
+public abstract class ClipboardMonitorComponent implements ClipboardMonitor {
 
 	private ClipboardMonitor monitor;
 	private BundleContext bundleContext;
@@ -49,11 +49,22 @@ public abstract class ClipboardMonitorComponent {
 
 	protected void activate(BundleContext context) {
 		this.bundleContext = context;
-		_getMonitor().start();
+		start();
 	}
 
 	protected void deactivate() {
-		_getMonitor().stop();
+		stop();
+	}
+
+	public void start() {
+		_getMonitor().start();
+	}
+
+	public void stop() {
+		if (monitor != null) {
+			monitor.stop();
+			monitor = null;
+		}
 	}
 
 	protected void onChange(ClipboardEvent event) {

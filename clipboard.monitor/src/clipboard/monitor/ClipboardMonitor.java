@@ -31,12 +31,4 @@ public interface ClipboardMonitor {
 	 * effect.
 	 */
 	void stop();
-
-	/**
-	 * Called upon changes in the clipboard.
-	 * 
-	 * @param event
-	 *            describing the change
-	 */
-	void onChange(ClipboardEvent event);
 }

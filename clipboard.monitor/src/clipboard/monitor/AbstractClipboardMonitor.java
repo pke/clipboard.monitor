@@ -28,7 +28,7 @@ public abstract class AbstractClipboardMonitor implements Runnable,
 
 	public void start() {
 		if (null == thread) {
-			Thread thread = new Thread(this, "Clipboard Monitor"); //$NON-NLS-1$
+			thread = new Thread(this, "Clipboard Monitor"); //$NON-NLS-1$
 			thread.setDaemon(true);
 			thread.start();
 		}
@@ -40,4 +40,12 @@ public abstract class AbstractClipboardMonitor implements Runnable,
 			thread = null;
 		}
 	}
+
+	/**
+	 * Called upon changes in the clipboard.
+	 * 
+	 * @param event
+	 *            describing the change
+	 */
+	abstract protected void onChange(ClipboardEvent event);
 }
