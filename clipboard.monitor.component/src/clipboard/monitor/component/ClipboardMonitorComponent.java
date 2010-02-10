@@ -19,7 +19,7 @@ import clipboard.monitor.ClipboardListener;
 import clipboard.monitor.ClipboardMonitor;
 
 /**
- * Abstract base class for clipoard monitor OSGi components.
+ * Abstract base class for clipboard monitor OSGi components.
  * 
  * 
  * @author <a href="mailto:phil.kursawe@gmail.com">Philipp Kursawe</a>
@@ -67,6 +67,12 @@ public abstract class ClipboardMonitorComponent implements ClipboardMonitor {
 		}
 	}
 
+	/**
+	 * This method should be called by subclasses to send the event to
+	 * registered service listeners.
+	 * 
+	 * @param event
+	 */
 	protected void onChange(ClipboardEvent event) {
 		ServiceReference[] references = null;
 		try {
